@@ -6,7 +6,7 @@
 # Update Ubuntu and get standard repository programs
 sudo apt update && sudo apt full-upgrade -y
 
-function install {
+install () {
   which $1 &> /dev/null
 
   if [ $? -ne 0 ]; then
